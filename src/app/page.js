@@ -6,16 +6,13 @@ import FeatureCard from "@/components/featureCard/FeatureCard";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <Header />
 
       <Hero />
 
       <FeatureCard />
-
-      <section className={styles.container}>
-        
-      </section>
+    
     </div>
   );
 }

@@ -14,6 +14,7 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
+  letter-spacing: .5px;
 }
 
 .tagline {
@@ -25,6 +26,7 @@
   margin-left: auto;
   margin-right: auto;
   opacity: 0.9;
+  letter-spacing: .5px;
 }
 
 .ctaButton {
@@ -42,4 +44,60 @@
 .ctaButton:hover {
   background-color: white;
   color: #001f40; 
+}
+
+
+@media (max-width: 768px) {
+    .heroSection {
+        padding: 100px 20px; 
+    }
+
+    .headline {
+        font-size: 2.8rem; 
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+    
+    .headline {
+        font-size: 2rem; 
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .ctaButton {
+        padding: 14px 35px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+  .headline {
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .tagline {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .ctaButton {
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+
+  .ctaButton:hover {
+    background-color: white;
+    color: #001f40; 
+  }
+
 }
