@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Falcon Insights",
-  description: "Exploring Data with Falcon Insights",
+  title: "Falcon Analytics",
+  description: "Exploring Data with Falcon Analytics",
 };
 
 export default function RootLayout({ children }) {
