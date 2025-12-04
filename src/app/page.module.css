@@ -1,8 +1,314 @@
 .container {
   width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 150px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| PROFIT SECTION (DESKTOP)
+|--------------------------------------------------------------------------
+*/
+.profitSection {
+  margin-top: 130px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profitImgContainer {
+  width: 43%;
+}
+
+.profitImgContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.profitTextContainer {
+  width: 50%;
+  padding-right: 30px;
+  padding-bottom: 40px;
+}
+
+.profitTextContainer h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+  letter-spacing: .5px;
+}
+
+.profitTextContainer p {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: .5px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.profitTextContainer button {
+  padding: 13px 20px;
+  font-size: 1rem;
+  letter-spacing: .5px;
+  background-color: #073465;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/*
+|--------------------------------------------------------------------------
+| ABOUT SECTION (DESKTOP)
+|--------------------------------------------------------------------------
+*/
+.aboutSection {
+  margin-top: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 5%;
+  background-color: whitesmoke;
+}
+
+.aboutSection h2 {
+  font-size: 40px;
+  margin-bottom: 70px;
+  letter-spacing: .5px;
+  color: #073465;
+}
+
+.aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.aboutImgWrapper {
+  width: 45%;
+}
+
+.aboutImgWrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.aboutTextWrapper {
+  width: 50%;
+  padding-left: 30px;
+}
+
+.aboutTextWrapper h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  letter-spacing: .5px;
+  color: #073465;
+}
+
+.aboutTextWrapper p {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: .5px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.missionList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.missionList li {
+  margin-bottom: 12px;
+  padding-left: 28px;
+  position: relative;
+  line-height: 1.5;
+  color: #555;
+}
+
+.missionList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4A90E2;
+}
+
+
+.learnMoreBtn {
+  padding: 12px 20px;
+  font-size: 15px;
+  letter-spacing: .5px;
+  background-color: #073465;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| TABLET RESPONSIVENESS (max-width: 768px)
+|--------------------------------------------------------------------------
+*/
+@media (max-width: 768px) {
+  /* --- PROFIT SECTION --- */
+  .profitSection {
+    margin-top: 80px;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .profitImgContainer {
+    width: 60%;
+    order: 1;
+    margin-bottom: 50px;
+  }
+
+  .profitTextContainer {
+    width: 90%;
+    order: 2;
+    padding-right: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .profitTextContainer h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .profitTextContainer p {
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+
+  .profitTextContainer button {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  /* --- ABOUT SECTION --- */
+  .aboutSection {
+    margin-top: 80px;
+    padding: 40px 20px; /* Consistently reduced padding */
+  }
+
+  .aboutSection h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .aboutContent {
+    flex-direction: column;
+  }
+
+  .aboutImgWrapper {
+    width: 60%; /* Consistent image size with profit section for visual balance */
+    order: 1;
+    margin-bottom: 30px;
+  }
+
+  .aboutTextWrapper {
+    width: 100%;
+    order: 2;
+    padding-left: 0;
+  }
+
+  .aboutTextWrapper h4 {
+    text-align: center;
+  }
+
+  .aboutTextWrapper p {
+    text-align: center;
+  }
+
+  .missionList {
+    padding-left: 20px;
+  }
+
+  .learnMoreBtn {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| PHONE RESPONSIVENESS (max-width: 480px)
+|--------------------------------------------------------------------------
+*/
+@media (max-width: 480px) {
+
+  /* --- PROFIT SECTION --- */
+  .profitSection {
+    width: 95%; /* Adjusted width slightly */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .profitTextContainer {
+      width: 100%;
+  }
+
+  .profitTextContainer h2 {
+    font-size: 22px;
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+
+  .profitTextContainer p {
+    font-size: 14px;
+  }
+
+  .profitImgContainer {
+    width: 70%; /* Image can be slightly larger on phone */
+  }
+
+  /* --- ABOUT SECTION --- */
+  .aboutSection {
+    padding: 40px 20px;
+  }
+
+  .aboutSection h2 {
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+  
+  .aboutImgWrapper {
+    width: 75%;
+  }
+
+  .aboutTextWrapper h4 {
+    font-size: 18px;
+  }
+
+  .aboutTextWrapper p {
+    font-size: 14px;
+  }
+
+  .missionList {
+    padding-left: 10px;
+  }
+
+  .missionList li {
+    font-size: 15px;
+  }
 }

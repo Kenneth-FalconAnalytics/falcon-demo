@@ -3,19 +3,19 @@ import styles from './featureCard.module.css';
 
 const cardsData = [
   {
-    title: "Analytics",
+    title: "Bondtrack",
     text: "Harness the power of data to drive informed decision-making.",
     href: "https://bondtrack.org/"
   },
   {
-    title: "AI Systems",
+    title: "TrainTrack",
     text: "Develop intelligent solutions to automate and optimize processes.",
-    href: "https://bondtrack.org/"
+    href: "/training"
   },
   {
     title: "Digital Capability",
     text: "Build the infrastructure and expertise for digital transformation.",
-    href: "https://bondtrack.org/"
+    href: "/"
   },
 ];
 
@@ -33,7 +33,7 @@ export default function FeatureCard() {
           <div 
             className={styles.card} 
             data-aos="fade-up" 
-            data-aos-delay={index * 200}
+            data-aos-delay={index * 100}
           >
             <h3 className={styles.cardTitle}>{card.title}</h3>
             <p className={styles.cardText}>{card.text}</p>

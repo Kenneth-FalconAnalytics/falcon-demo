@@ -9,7 +9,7 @@ export default function AOSLayout({ children }) {
     // Initialize AOS once when the component mounts
     AOS.init({
       offset: 100,
-      duration: 800,
+      duration: 700,
       easing: 'ease-out',
       once: true,
     });

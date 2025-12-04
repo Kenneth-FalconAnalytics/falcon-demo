@@ -1,29 +1,27 @@
 .cardsContainer {
+    width: 85%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    width: 100%; 
     margin-top: -60px;
-    padding: 0 40px;
     position: relative;
     z-index: 10;
 }
 
 .cardLink {
-    flex: 1; 
     text-decoration: none;
     color: inherit; 
     cursor: pointer;
+    width: 30%;
 }
 
 .card {
+    width: 100%;
     background-color: whitesmoke;
     color: rgb(0, 0, 66);
-    padding: 50px 30px;
-    flex: 1;
-    border-radius: 4px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
@@ -42,34 +40,62 @@
     text-align: center;
 }
 
-/* Responsive adjustments if needed */
+/*
+|--------------------------------------------------------------------------
+| TABLET RESPONSIVENESS (max-width: 768px)
+|--------------------------------------------------------------------------
+*/
 @media (max-width: 768px) {
     .cardsContainer {
         flex-direction: column;
         align-items: center;
         margin-top: -50px;
+        width: 95%;
     }
-    .card {
-        width: 90%;
+    
+    .cardLink {
+        width: 90%; 
         max-width: 400px;
+        margin-bottom: 25px; 
+    }
+    
+    .card:last-child .cardLink {
+        margin-bottom: 0;
+    }
+
+    .card {
+        width: 100%;
+        padding: 40px 25px;
     }
 }
 
 
+/*
+|--------------------------------------------------------------------------
+| PHONE RESPONSIVENESS (max-width: 480px)
+|--------------------------------------------------------------------------
+*/
 @media (max-width: 480px) {
     .cardsContainer {
-        margin-top: -40px;
+        margin-top: -30px;
+    }
+
+    .cardLink {
+        width: 95%;
+        max-width: none;
     }
 
     .card {
-        padding: 50px 20px;
+        padding: 30px 20px;
     }
+    
     .cardTitle {
-        font-size: 20px;
-        letter-spacing: .7px;
+        font-size: 18px;
+        letter-spacing: .6px;
     }
+    
     .cardText {
-        font-size: 14px;
-        letter-spacing: .7px;
+        font-size: 13px;
+        letter-spacing: .6px;
     }
 }
