@@ -3,12 +3,12 @@ import styles from './featureCard.module.css';
 
 const cardsData = [
   {
-    title: "Bondtrack",
+    title: "Bond Track",
     text: "Harness the power of data to drive informed decision-making.",
     href: "https://bondtrack.org/"
   },
   {
-    title: "TrainTrack",
+    title: "Skills Track",
     text: "Develop intelligent solutions to automate and optimize processes.",
     href: "/training"
   },
