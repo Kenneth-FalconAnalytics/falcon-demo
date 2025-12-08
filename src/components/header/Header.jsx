@@ -27,7 +27,11 @@ export default function Header() {
           <Link href="/" className={styles.navItem}>Contact</Link>
         </nav>
 
-        <img src="/icons/menu.png" className={styles.menu} alt="menu" onClick={handleClick}/>
+        {showNav ? 
+          <img src="/icons/close.png" className={styles.menu} alt="menu" onClick={handleClick}/>
+        :
+          <img src="/icons/menu.png" className={styles.menu} alt="close" onClick={handleClick}/>
+   } 
       </div>
     </header>
   );

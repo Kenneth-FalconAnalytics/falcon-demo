@@ -11,47 +11,19 @@
 
 .coursesSection h2 {
   text-align: center;
-  margin-bottom: 70px; 
-  font-size: 40px;
+  margin-bottom: 60px; 
+  font-size: 30px;
   color: #001f40;
   font-weight: 700;
   letter-spacing: .7px;
 }
 
 .courseGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
-
-.courseCard {
-  background: white;
-  padding: 30px; 
-  border-radius: 12px;
-  border-left: 5px solid #4A90E2;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-}
-
-.courseCard:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-}
-
-.courseCard h3 {
-  color: #001f40; 
-  font-size: 1.5rem;
-  margin-top: 0;
-  margin-bottom: 15px;
-  letter-spacing: .5px;
-}
-
-.courseCard p {
-  color: #555;
-  line-height: 1.6;
-  letter-spacing: .5px;
-}
-
 
 .backLinkContainer {
   text-align: center;
@@ -66,18 +38,8 @@
     }
 
     .coursesSection h2 {
-        font-size: 32px;
+        font-size: 25px;
         margin-bottom: 60px;
-    }
-
-    .courseGrid {
-        grid-template-columns: 1fr; 
-        gap: 25px;
-        padding: 0 15px;
-    }
-
-    .courseCard:hover {
-        transform: translateY(-4px); 
     }
     
     .coursesSection {
@@ -89,16 +51,12 @@
 
 @media (max-width: 480px) {
     .coursesSection h2 {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 50px;
         padding: 0 10px;
-        line-height: 30px;
+        line-height: 1.5;
     }
 
-    .courseCard h3 {
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
 
     .courseCard p {
         font-size: 14px;
