@@ -4,18 +4,18 @@ import styles from './featureCard.module.css';
 const cardsData = [
   {
     title: "Bond Track",
-    text: "Harness the power of data to drive informed decision-making.",
+    text: "Economic & Market Intelligence \n A multi-sector intelligence platform delivering dashboards across public finance, energy, and macroeconomic indicators — enabling continuous monitoring, trend analysis, and evidence-based policy and investment decisions.",
     href: "https://bondtrack.org/"
   },
   {
     title: "Skills Track",
-    text: "Develop intelligent solutions to automate and optimize processes.",
+    text: "Capability-on-Demand \n Data-driven insight into skills, roles, and training needs — aligning institutional capability with organisational priorities, delivery risk, and future requirements.",
     href: "/training"
   },
   {
     title: "Digital Capability",
-    text: "Build the infrastructure and expertise for digital transformation.",
-    href: "/"
+    text: "Judgement Support for Leaders \n An executive decision-support capability that embeds institutional knowledge, context, and precedent — enabling leaders, including newly appointed executives, to ask the right questions and make sound, defensible decisions quickly.",
+    href: "https://bondtrack.org/chatai/"
   },
 ];
 
