@@ -17,7 +17,8 @@ export default function Home() {
         <div className={styles.profitTextContainer}>
           <h2 data-aos="fade-right" data-aos-once="false">Make Your Business More Profitable</h2>
           <p data-aos="fade-up" data-aos-once="false">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Leverage data to uncover hidden opportunities and optimize your operational efficiency. 
+            By integrating advanced analytics into your core strategy, we help you make smarter decisions that drive revenue and ensure a competitive edge in an evolving market.
           </p>
           <button data-aos="fade-up" data-aos-once="false">Get Started</button>
         </div>
@@ -37,7 +38,9 @@ export default function Home() {
           <div className={styles.aboutTextWrapper}>
             <h4 data-aos="fade-left" data-aos-once="false">Our Mission</h4>
             <p data-aos="fade-up" data-aos-once="false">
-              To empower African institutions through cutting-edge analytics, AI systems, and digital capabilities. We strive to transform businesses and drive sustainable growth across the continent. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              To empower African institutions through cutting-edge analytics, AI systems, and digital capabilities. 
+              We strive to transform businesses and drive sustainable growth across the continent. By bridging the digital divide, we ensure that local enterprises are equipped with the tools necessary to 
+              compete globally while solving uniquely African challenges.
             </p>
             
             <ul className={styles.missionList} data-aos="fade-up" data-aos-once="false">
