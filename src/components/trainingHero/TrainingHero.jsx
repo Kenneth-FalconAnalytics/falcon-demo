@@ -3,7 +3,6 @@ import Link from 'next/link'
 import React from 'react'
 import styles from './trainingHero.module.css'
 
-
 export default function TrainingHero() {
   return (
     <div className={styles.heroWrapper}>
